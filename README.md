@@ -4,10 +4,10 @@ Um sistema simples e funcional para gerenciamento de livros e empréstimos, dese
 O projeto permite o **cadastro de usuários (leitores e bibliotecários)**, **gerenciamento de livros**, e **controle de empréstimos**.
 
 ## Alunos:
--Jonathan Juan
--Mateus Nogueira
--Mateus Vinicius
--Paulo Roberto 
+- Jonathan Juan
+- Mateus Nogueira
+- Mateus Vinicius
+- Paulo Roberto 
 
 ## Funcionalidades
 
