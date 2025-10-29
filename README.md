@@ -28,7 +28,7 @@ O projeto permite o **cadastro de usuários (leitores e bibliotecários)**, **ge
 - **Node.js** – Ambiente de execução JavaScript
 - **Express** – Framework para construção da API
 - **MySQL** – Banco de dados relacional
-- **HTML, CSS e JS puro** – Interface do usuário
+- **HTML, CSS e JS** – Interface do usuário
 
 ### Clonar o repositório
 ```bash
