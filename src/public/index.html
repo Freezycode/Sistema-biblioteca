@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Biblioteca - Login</title>
+  <link rel="stylesheet" href="./css/login.css" />
+</head>
+<body>
+  <h2>Biblioteca - Login e Cadastro</h2>
+
+  <div class="container">
+    <form id="formCadastro">
+      <h3>Cadastro</h3>
+      <input type="text" id="nome" placeholder="Nome" required />
+      <input type="email" id="emailCadastro" placeholder="Email" required />
+      <input type="password" id="senhaCadastro" placeholder="Senha" required />
+      <select id="perfilCadastro" required>
+        <option value="">Selecione o perfil</option>
+        <option value="bibliotecario">Bibliotecário</option>
+        <option value="leitor">Leitor</option>
+      </select>
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <form id="formLogin">
+      <h3>Login</h3>
+      <input type="email" id="emailLogin" placeholder="Email" required />
+      <input type="password" id="senhaLogin" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>

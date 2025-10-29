@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Área do Leitor</title>
+  <link rel="stylesheet" href="./css/leitor.css"/>
+</head>
+<body>
+  <header>
+    <h2>Bem-vindo, Leitor</h2>
+  </header>
+
+  <main class="container">
+    <section>
+      <h3>Catálogo de Livros</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Ano</th>
+            <th>Disponível</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-livros"></tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Meus Empréstimos</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Data Empréstimo</th>
+            <th>Data Prevista</th>
+            <th>Status</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-emprestimos"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="./js/leitor.js"></script>
+</body>
+</html>

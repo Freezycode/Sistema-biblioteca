@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #6366f1; 
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+.container {
+  background-color: #f6f8ff;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 90%;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+form {
+  flex: 1;
+  min-width: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+form h3 {
+  text-align: center;
+  color: #272727;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+form h3::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #6366f1;
+}
+input,
+select {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f6f8ff;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  transition: 0.2s ease-in-out;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #6366f1;
+  background-color: #fff;
+}
+
+button {
+  background-color: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 8px 12px -5px rgba(99, 102, 241, 0.4);
+}
+
+button:hover {
+  background-color: #818cf8;
+}
+.mensagem {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 3px;
+}
+
+.mensagem.erro {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.mensagem.sucesso {
+  background-color: #d4edda;
+  color: #155724;
+}
+@media (max-width: 600px) {
+  th, td {
+    font-size: 0.85rem;
+  }
+  button {
+    padding: 0.4rem 0.8rem;
+  }
+  .container {
+    padding: 0 0.5rem;
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bibliotecário - Biblioteca</title>
+  <link rel="stylesheet" href="./css/bibliotecario.css"/>
+</head>
+<body>
+  <h2>Área do Bibliotecário</h2>
+  <button id="btnLogout">Sair</button>
+
+  <h3>Cadastrar / Editar Livro</h3>
+  <form id="formLivro">
+    <input type="text" id="livro-titulo" placeholder="Título" required />
+    <input type="text" id="livro-autor" placeholder="Autor" required />
+    <input type="number" id="livro-ano" placeholder="Ano" />
+    <input type="number" id="livro-quantidade" placeholder="Quantidade" required min="0" />
+    <button type="submit">Salvar Livro</button>
+  </form>
+
+  <h3>Livros</h3>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>ID</th><th>Título</th><th>Autor</th><th>Ano</th><th>Disponível</th><th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabela-livros"></tbody>
+  </table>
+
+  <h3>Empréstimos Ativos</h3>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Leitor</th><th>Livro</th><th>Data Empréstimo</th><th>Devolução Prevista</th><th>Status</th><th>Ação</th>
+      </tr>
+    </thead>
+    <tbody id="tabela-emprestimos"></tbody>
+  </table>
+
+  <script src="./js/bibliotecario.js"></script>
+</body>
+</html>
